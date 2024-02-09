@@ -1,0 +1,1 @@
+console.log('%ctest log into console', 'padding: 5px; background: DarkKhaki; color: Yellow;');
