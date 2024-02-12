@@ -1,0 +1,87 @@
+.form-input {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid $border;
+    width: 100%;
+    color: $black;
+    font-family: $userfont;
+
+    &__wrap {
+        position: relative;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    &__validation {
+        display: none;
+        opacity: 0;
+        color: $error;
+        font-size: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: opacity 0.3s ease-in;
+
+        &.invalid {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    // adjust placeholder behavior
+    &[placeholder] {
+        text-overflow: ellipsis;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $placeholder;
+    }
+    &::-moz-placeholder {
+        color: $placeholder;
+    }
+    &:-moz-placeholder {
+        color: $placeholder;
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    &:-moz-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    &:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    // hide arrows in input type number
+    &[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    &[type="number"],
+    &[type="number"]:hover,
+    &[type="number"]:focus {
+        appearance: none;
+        -moz-appearance: textfield;
+    }
+    &__message {
+        resize: vertical;
+    }
+}
+

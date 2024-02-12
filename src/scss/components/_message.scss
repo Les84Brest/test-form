@@ -1,0 +1,29 @@
+.message {
+  visibility: hidden;
+  position: fixed;
+  width: 500px;
+  padding: 30px;
+  background-color: $white;
+  border-left: 8px solid $accent;
+  border-radius: 5px;
+  box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.25);
+  transform: translate(1000px, 0);
+  transition: transform 0.7s ease-in;
+  font-size: 14px;
+}
+
+.error {
+  border-left: 5px solid $error;
+}
+
+.success {
+  border-left: 5px solid $success;
+}
+
+.visible {
+  display: block;
+  visibility: visible;
+  bottom: 30px;
+  right: 30px;
+  transform: translate(0, 0);
+}

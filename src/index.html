@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test form main</title>
-  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    Some text in container div
+  <main class="main main-layout">
+    <div class="container">
+      <div class="form__wrap">
+        <h1 class="form__title">
+          Feedback form
+        </h1>
+        <form class="form" name="feedback_form">
+          <div class="form-input__wrap">
+            <label class="form-input__label">Name</label>
+            <input tabindex="1" name="userName" class="form-input" placeholder="enter user name" type="text" required />
+            <span class="form-input__validation"></span>
+          </div>
+          <div class="form-input__wrap">
+            <label class="form-input__label">E-mail</label>
+            <input tabindex="2" name="email" class="form-input" placeholder="enter e-mail" type="email" required />
+            <span class="form-input__validation"></span>
+          </div>
+          <div class="form-input__wrap">
+            <label class="form-input__label">Phone number</label>
+            <input tabindex="3" name="phone" placeholder="+375(00)000-00-00" class="form-input" required  type="text" />
+            <span class="form-input__validation"></span>
+          </div>
+          <div class="form-input__wrap">
+            <label class="form-input__label">Message</label>
+            <textarea name="message" tabindex="4" placeholder="enter message" required cols="50" rows="10"
+              class="form-input form-input__message"></textarea>
+            <span class="form-input__validation"></span>
+          </div>
+          <button name="formSubmit" tabindex="5" class="btn btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, inventore sint! Earum
+        perferendis numquam aliquid vel, dolore neque architecto odit deserunt corporis, repellendus sint, assumenda non
+        obcaecati quam ipsam sequi est itaque magnam ut et sit perspiciatis. Velit, id culpa repudiandae ipsa quidem
+        dicta repellendus unde autem eveniet vero. Tempora!</p>
+      <button class="btn btn-submit btn-show">Show modal</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, inventore sint! Earum
+        perferendis numquam aliquid vel, dolore neque architecto odit deserunt corporis, repellendus sint, assumenda non
+        obcaecati quam ipsam sequi est itaque magnam ut et sit perspiciatis. Velit, id culpa repudiandae ipsa quidem
+        dicta repellendus unde autem eveniet vero. Tempora!</p>
+
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, inventore sint! Earum
+        perferendis numquam aliquid vel, dolore neque architecto odit deserunt corporis, repellendus sint, assumenda non
+        obcaecati quam ipsam sequi est itaque magnam ut et sit perspiciatis. Velit, id culpa repudiandae ipsa quidem
+        dicta repellendus unde autem eveniet vero. Tempora!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, inventore sint! Earum
+        perferendis numquam aliquid vel, dolore neque architecto odit deserunt corporis, repellendus sint, assumenda non
+        obcaecati quam ipsam sequi est itaque magnam ut et sit perspiciatis. Velit, id culpa repudiandae ipsa quidem
+        dicta repellendus unde autem eveniet vero. Tempora!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, inventore sint! Earum
+        perferendis numquam aliquid vel, dolore neque architecto odit deserunt corporis, repellendus sint, assumenda non
+        obcaecati quam ipsam sequi est itaque magnam ut et sit perspiciatis. Velit, id culpa repudiandae ipsa quidem
+        dicta repellendus unde autem eveniet vero. Tempora!</p>
+  </main>
+  <!-- messages -->
+  <div class="message">
+    <div class="message__text ">Текст сообщения об ошибке</div>
+  </div>
+  <!-- modal -->
+  <div class="modal">
+    <div class="modal__body">
+      <div class="modal__header">
+        <h3 class="modal__title">Modal title</h3>
+        <button class="btn-text modal__close">Х</button>
+      </div>
+      <div class="modal__content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem corrupti consectetur itaque nostrum
+        dignissimos, eos, vero harum deserunt, reiciendis rerum. Aliquid distinctio doloremque laudantium cum cumque,
+        repudiandae voluptatum voluptate nesciunt quas temporibus ducimus fuga dolor quia ex libero! Quas mollitia ad
+        quae nam, maiores dolore aliquid amet facere laborum architecto est harum quis eius temporibus modi obcaecati.
+        Iusto vel veritatis, sequi illo maiores molestias unde? Illum obcaecati dolore ratione porro dolores labore est
+        omnis.
+      </div>
+
+    </div>
+
   </div>
 </body>
+
 </html>

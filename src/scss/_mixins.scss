@@ -1,0 +1,22 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+    @font-face {
+        font-family: $fname;
+        font-style: $fstyle;
+        font-weight: $fweight;
+        src: url($furl) format('woff2');
+    }
+}
+
+// breackpoints
+
+@mixin mobile {
+    @media (max-width: 600px) { @content }
+}
+
+@mixin tablet {
+    @media (max-width: 998px) { @content }
+}
+
+@mixin desktop{
+    @media (max-width: 1440px) { @content }
+}

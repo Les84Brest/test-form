@@ -1,0 +1,57 @@
+@import "./variables";
+@import "./mixins";
+@import "~normalize.css";
+
+
+
+@include font("Poppins", normal, 400, "../fonts/poppins-regular.woff2");
+@include font("Poppins", bold, 800, "../fonts/poppins-semi-bold.woff2");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  background-color: $bodybg;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  font-size: $fontsize;
+  font-family: $userfont;
+
+  @include mobile {
+    padding: 15px;
+  }
+
+  @include tablet {
+    padding: 20px;
+  }
+
+  @include desktop {
+    padding: 25px;
+  }
+
+  &__add-data {
+    margin-bottom: 48px;
+  }
+
+  &__add-data-form {
+    margin-bottom: 50px;
+  }
+}
+
+@import "./components/all";

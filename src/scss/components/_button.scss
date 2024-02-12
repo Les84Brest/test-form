@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: $userfont;
+}
+
+.btn-submit {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 25px;
+    color: $white;
+    border-radius: 4px;
+    background-color: $accent;
+    font-weight: 700;
+    transition: color 0.3s ease-in;
+
+    &:disabled {
+        background-color: $btndisabled;
+        cursor: not-allowed;
+    }
+}
+
+.btn-text {
+    background: transparent;
+    border: none;
+
+}
+
